@@ -34,8 +34,11 @@ export async function POST(request: Request) {
 
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json({ success: false, error: error.message });
+  } catch (error: any) {
+  console.error(error);
+  return NextResponse.json({
+    success: false,
+    error: error?.message || "Bir hata oluştu",
+  });
   }
 }
