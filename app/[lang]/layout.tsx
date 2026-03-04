@@ -19,28 +19,30 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// JSON import (client compatible)
+// JSON import yöntemi (client ile uyumlu)
 import tr from "../../locales/tr.json";
 import en from "../../locales/en.json";
 import ar from "../../locales/ar.json";
 
-const locales = { tr, en, ar };
+const locales: Record<string, Record<string, string>> = { tr, en, ar };
 
-type RootLayoutProps = {
+export default function RootLayout({
+  children,
+  params,
+}: {
   children: ReactNode;
-  params: { lang: "tr" | "en" | "ar" };
-};
+  params: { lang?: string };
+}) {
+  // Desteklenen diller
+  const lang = ["tr", "en", "ar"].includes(params.lang || "") ? params.lang! : "tr";
 
-export default function RootLayout({ children, params }: RootLayoutProps) {
-  // Dil parametresi
-  const lang = params.lang || "tr";
   const localeData = locales[lang] || locales.tr;
 
   return (
     <html lang={lang} className={`${inter.variable} ${poppins.variable}`}>
       <body className="bg-gray-100 text-gray-800 antialiased flex flex-col min-h-screen">
         {/* Navbar */}
-        <Navbar locale={localeData} lang={lang} />
+        <Navbar locale={localeData} />
 
         {/* Sayfa içeriği */}
         <main className="flex-grow max-w-6xl mx-auto px-6 py-16">
@@ -48,13 +50,10 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
         </main>
 
         {/* Footer */}
-        <Footer locale={localeData} lang={lang} />
+        <Footer locale={localeData} />
 
         {/* WhatsApp */}
-        <WhatsAppButton
-          text={localeData.whatsapp?.text || "Bize WhatsApp'tan ulaşın"}
-          phoneNumber={localeData.whatsapp?.phone || "905xxxxxxxxx"}
-        />
+        <WhatsAppButton />
       </body>
     </html>
   );
