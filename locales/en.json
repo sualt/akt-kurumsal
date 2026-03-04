@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Our Services",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "whatsapp": {
+    "text": "Contact via WhatsApp"
+  },
+  "hero": {
+    "title": "Our Professional Consulting Services",
+    "subtitle": "We provide end-to-end professional support in all official processes from company setup to trademark and patent registration."
+  },
+  "cta": {
+    "text": "Get Free Consultation"
+  }
+}

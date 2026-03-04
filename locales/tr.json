@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "home": "Anasayfa",
+    "services": "Hizmetlerimiz",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır"
+  },
+  "whatsapp": {
+    "text": "WhatsApp ile iletişime geç"
+  },
+  "hero": {
+    "title": "Profesyonel Danışmanlık Hizmetlerimiz",
+    "subtitle": "Şirket kuruluşundan marka ve patent tesciline kadar tüm resmi süreçlerde uçtan uca profesyonel destek sağlıyoruz."
+  },
+  "cta": {
+    "text": "Ücretsiz Danışmanlık Al"
+  }
+}

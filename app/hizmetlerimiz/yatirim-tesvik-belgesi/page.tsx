@@ -1,162 +1,232 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Yatırım Teşvik Belgesi Danışmanlığı 2026 | Devlet Teşvikleri",
-  description:
-    "Yatırım teşvik belgesi nasıl alınır? Bölgesel teşvikler, vergi indirimi, SGK desteği, KDV istisnası ve başvuru süreci hakkında detaylı rehber.",
-  keywords: [
-    "yatırım teşvik belgesi",
-    "devlet teşvikleri",
-    "vergi indirimi teşvik",
-    "sgk primi desteği",
-    "bölgesel teşvik sistemi",
-  ],
-  alternates: {
-    canonical:
-      "https://seninsiten.com/hizmetler/yatirim-tesvik-belgesi",
-  },
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.15,
+      duration: 0.5,
+      type: "spring" as const,
+      stiffness: 120,
+    },
+  }),
 };
 
 export default function YatirimTesvikPage() {
   return (
-    <div >
+    <div className="bg-gray-50 min-h-screen">
 
-      <h1 className="text-4xl md:text-5xl font-bold mb-10">
-        Yatırım Teşvik Belgesi Danışmanlığı
-      </h1>
+      {/* ================= BANNER ================= */}
+      <section className="relative w-full h-[420px] flex items-center justify-center text-white">
 
-      {/* GİRİŞ */}
-      <p className="text-lg text-gray-300 leading-8 mb-10">
-        Yatırım Teşvik Belgesi, Türkiye’de yapılacak yatırımların devlet
-        tarafından desteklenmesini sağlayan resmi bir belgedir.
-        Bu belge sayesinde yatırımcılar vergi avantajları,
-        SGK prim destekleri ve finansman kolaylıkları elde eder.
-      </p>
+        <Image
+          src="/images/yatırım.png"
+          alt="Yatırım Teşvik Belgesi Danışmanlığı"
+          fill
+          priority
+          className="object-cover"
+        />
 
-      {/* TEŞVİK SİSTEMİNİN TEMELİ */}
-      <h2 className="text-2xl font-semibold mb-6">
-        Türkiye Teşvik Sisteminin Yapısı
-      </h2>
+        <div className="absolute inset-0 bg-black/60"></div>
 
-      <p className="text-gray-300 leading-8 mb-6">
-        Türkiye’de teşvik sistemi bölgesel kalkınma esasına göre
-        6 bölgeye ayrılmıştır. Her bölge için destek oranları farklıdır.
-        Amaç, yatırımların gelişmişlik düzeyi düşük bölgelere yönlendirilmesidir.
-      </p>
-
-      <ul className="space-y-3 text-gray-300 mb-12">
-        <li>✔ Genel Teşvik Uygulamaları</li>
-        <li>✔ Bölgesel Teşvik Uygulamaları</li>
-        <li>✔ Öncelikli Yatırımlar</li>
-        <li>✔ Stratejik Yatırımlar</li>
-      </ul>
-
-      {/* SAĞLANAN DESTEKLER */}
-      <h2 className="text-2xl font-semibold mb-6">
-        Yatırım Teşvik Belgesi Kapsamındaki Destek Unsurları
-      </h2>
-
-      <div className="space-y-6 text-gray-300 mb-12">
-
-        <div>
-          <h3 className="font-semibold text-white">
-            1. KDV İstisnası
-          </h3>
-          <p>
-            Yatırım kapsamında alınan makine ve teçhizat için
-            Katma Değer Vergisi ödenmez.
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Yatırım Teşvik Belgesi Danışmanlık Hizmetleri
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 leading-8">
+            Devlet desteklerinden maksimum fayda sağlayın, yatırımınızı güvenle büyütün.
           </p>
         </div>
+      </section>
 
-        <div>
-          <h3 className="font-semibold text-white">
-            2. Gümrük Vergisi Muafiyeti
-          </h3>
+      {/* HERO */}
+      <section className="text-center py-28 px-6 bg-gradient-to-b from-gray-50 to-gray-100">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={1}
+          className="text-4xl md:text-5xl font-bold mb-6 text-gray-900"
+        >
+          AKT Kurumsal - Yatırım Teşvik Belgesi Danışmanlık Hizmetleri
+        </motion.h1>
+
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={2}
+          className="text-gray-600 max-w-3xl mx-auto leading-8"
+        >
+          Yeni Yatırım Teşvik Sistemi | Yatırım Teşvik Belgesi Başvurusu | KDV İstisnası | Vergi İndirimi | SGK Prim Desteği | Stratejik Yatırım Teşvikleri
+        </motion.p>
+      </section>
+
+      {/* HAKKIMIZDA */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 space-y-6">
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={1}
+          className="text-2xl font-semibold text-gray-900"
+        >
+          Hakkımızda
+        </motion.h2>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          custom={2}
+          className="space-y-4"
+        >
           <p>
-            Yurt dışından ithal edilen yatırım mallarında
-            gümrük vergisi uygulanmaz.
+            Yeni Yatırım Teşvik Sistemi kapsamında bölgesel, stratejik, teknoloji ve öncelikli yatırımlar için sağlanan desteklerin doğru analiz edilmesi ve başvurunun mevzuata uygun hazırlanması büyük önem taşımaktadır. AKT Kurumsal olarak tüm süreci titizlikle yürütmekteyiz.
           </p>
-        </div>
-
-        <div>
-          <h3 className="font-semibold text-white">
-            3. Vergi İndirimi
-          </h3>
           <p>
-            Kurumlar vergisi, yatırım katkı oranına göre
-            belirli oranda indirimli uygulanır.
+            Yatırım Teşvik Belgesi, yatırımcıların KDV istisnası, gümrük vergisi muafiyeti, vergi indirimi, sigorta primi işveren hissesi desteği ve faiz/kâr payı desteği gibi devlet teşviklerinden yararlanmasını sağlayan resmi bir belgedir. Belge olmadan yatırım harcamaları teşvik kapsamına alınamaz. Bu nedenle yatırım başlamadan önce başvuru yapılması gerekmektedir.
           </p>
-        </div>
+        </motion.div>
+      </section>
 
-        <div>
-          <h3 className="font-semibold text-white">
-            4. SGK Primi İşveren Hissesi Desteği
-          </h3>
-          <p>
-            Devlet, belirli süre boyunca işverenin SGK prim yükünü karşılar.
-          </p>
-        </div>
+      {/* 1. ve 2. Resim */}
+      <section className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-6">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+          <div className="w-full relative aspect-[16/9]">
+            <Image
+              src="/images/tesviksistemkurgusu.png"
+              alt="Teşvik Sistemi Kurgu"
+              fill
+              className="object-contain rounded-2xl shadow-lg"
+            />
+          </div>
+        </motion.div>
 
-        <div>
-          <h3 className="font-semibold text-white">
-            5. Faiz veya Kar Payı Desteği
-          </h3>
-          <p>
-            Yatırım kredilerinde faiz yükünün bir kısmı devlet tarafından karşılanır.
-          </p>
-        </div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}>
+          <div className="w-full relative aspect-[16/9]">
+            <Image
+              src="/images/bolgeler.png"
+              alt="Bölgeler"
+              fill
+              className="object-contain rounded-2xl shadow-lg"
+            />
+          </div>
+        </motion.div>
+      </section>
 
-      </div>
+      {/* TEŞVİK SİSTEMİ */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 space-y-6">
+        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={1} className="text-2xl font-semibold text-gray-900">
+          Yeni Yatırım Teşvik Sistemi Yapısı
+        </motion.h2>
 
-      {/* BAŞVURU SÜRECİ */}
-      <h2 className="text-2xl font-semibold mb-6">
-        Başvuru Süreci Adım Adım
-      </h2>
+        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={2} className="space-y-2">
+          <p>Yeni teşvik sistemi iki ana yapıdan oluşmaktadır:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>Türkiye Yüzyılı Kalkınma Programları (Teknoloji, Stratejik ve Yerel Kalkınma yatırımları)</li>
+            <li>Bölgesel ve Öncelikli Yatırımlar Teşvik Sistemi</li>
+          </ul>
+        </motion.div>
+      </section>
 
-      <ol className="list-decimal pl-6 space-y-4 text-gray-300 mb-12">
-        <li>Yatırım fizibilite raporunun hazırlanması</li>
-        <li>Teşvik türünün doğru belirlenmesi</li>
-        <li>E-imza ile elektronik başvuru</li>
-        <li>Bakanlık değerlendirme süreci</li>
-        <li>Belgenin düzenlenmesi</li>
-        <li>Yatırım tamamlama vizesi</li>
-      </ol>
+      {/* 3. Büyük Resim */}
+      <motion.section initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="w-full relative aspect-[21/9] mb-12 px-6">
+        <Image
+          src="/images/sektoreltesvik.png"
+          alt="Sektörel Teşvik"
+          fill
+          className="object-contain rounded-2xl shadow-lg"
+        />
+      </motion.section>
 
-      {/* RİSKLER */}
-      <h2 className="text-2xl font-semibold mb-6">
-        En Sık Yapılan Hatalar
-      </h2>
+      {/* TEŞVİK KAPSAMINDAKİ DESTEKLER */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 space-y-6">
+        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={1} className="text-2xl font-semibold text-gray-900">
+          Teşvik Kapsamındaki Destekler
+        </motion.h2>
 
-      <ul className="space-y-3 text-gray-300 mb-12">
-        <li>✖ Yanlış teşvik türü seçimi</li>
-        <li>✖ Eksik makine listesi</li>
-        <li>✖ Yanlış kapasite hesabı</li>
-        <li>✖ Süre takibinin yapılmaması</li>
-      </ul>
+        <motion.ul initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={2} className="list-disc list-inside space-y-1">
+          <li>KDV İstisnası (Makine ve teçhizat alımlarında KDV muafiyeti)</li>
+          <li>Gümrük Vergisi Muafiyeti</li>
+          <li>Vergi İndirimi (Gelir/Kurumlar Vergisi avantajı)</li>
+          <li>Sigorta Primi İşveren Hissesi Desteği</li>
+          <li>Sigorta Primi İşçi Hissesi Desteği (6. Bölge)</li>
+          <li>Faiz veya Kâr Payı Desteği</li>
+          <li>Yatırım Yeri Tahsisi</li>
+          <li>Stratejik yatırımlarda makine hibesi</li>
+        </motion.ul>
+      </section>
 
-      {/* STRATEJİK AVANTAJ */}
-      <h2 className="text-2xl font-semibold mb-6">
-        Profesyonel Danışmanlığın Önemi
-      </h2>
+      {/* HİZMETLERİMİZ */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 space-y-6">
+        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={1} className="text-2xl font-semibold text-gray-900">
+          Hizmetlerimiz
+        </motion.h2>
 
-      <p className="text-gray-300 leading-8 mb-16">
-        Teşvik sistemi teknik mevzuat içerir. Yanlış yapılan başvurular
-        yatırım katkı oranının düşmesine veya destek kaybına neden olabilir.
-        Profesyonel danışmanlık ile maksimum destek oranı hedeflenir.
-      </p>
+        <motion.ul initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={2} className="list-disc list-inside space-y-1">
+          <li>Yatırım Teşvik Belgesi Başvuru Danışmanlığı</li>
+          <li>Revize İşlemleri (Makine listesi, yatırım tutarı, süre uzatımı vb.)</li>
+          <li>Tamamlama Vizesi İşlemleri</li>
+        </motion.ul>
+      </section>
+
+      {/* NEDEN AKT KURUMSAL */}
+      <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 space-y-6">
+        <motion.h2 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={1} className="text-2xl font-semibold text-gray-900">
+          Neden AKT Kurumsal?
+        </motion.h2>
+
+        <motion.ul initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={2} className="list-disc list-inside space-y-1">
+          <li>Güncel mevzuata hakim uzman kadro</li>
+          <li>Maksimum teşvik avantajı için stratejik analiz</li>
+          <li>Hızlı ve eksiksiz başvuru süreci</li>
+          <li>Türkiye genelinde danışmanlık hizmeti</li>
+          <li>Şeffaf ve sürekli bilgilendirme</li>
+        </motion.ul>
+      </section>
 
       {/* CTA */}
-      <div className="bg-blue-900/30 p-10 rounded-2xl border border-blue-700">
-        <h3 className="text-xl font-semibold mb-4">
-          Ücretsiz Teşvik Analizi
-        </h3>
-        <p className="text-gray-300 mb-6">
-          Yatırımınız için hangi teşvik modelinin uygun olduğunu analiz edelim.
-        </p>
-        <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold">
-          Analiz Talep Et
-        </button>
-      </div>
+      <section className="py-24 bg-white border-t border-gray-200 text-center">
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl font-semibold text-gray-900 mb-6"
+        >
+          Profesyonel Danışmanlık Alın
+        </motion.h3>
+
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.3,
+            duration: 0.5,
+            type: "spring" as const,
+            stiffness: 120,
+          }}
+        >
+          <Link
+            href="/iletisim"
+            className="bg-blue-600 text-white px-10 py-4 rounded-xl font-medium hover:bg-blue-700 transition"
+          >
+            Teklif Al
+          </Link>
+        </motion.div>
+      </section>
 
     </div>
   );
