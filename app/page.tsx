@@ -192,13 +192,7 @@ export default function HomePage() {
               transition={{ duration: 1.2 }}
               className="absolute inset-0"
             >
-              <Image
-                src="/images/banner.jpeg"
-                alt="AKT Danışmanlık"
-                fill
-                priority
-                className="object-cover"
-              />
+             
               {/* Dark gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/70 via-[#0a2463]/50 to-[#0a2463]/80" />
             </motion.div>
