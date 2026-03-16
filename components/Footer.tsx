@@ -1,54 +1,128 @@
 "use client";
 
 import Link from "next/link";
+import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+
+const menu = [
+  { name: "Anasayfa", href: "/" },
+  { name: "Hizmetlerimiz", href: "/hizmetlerimiz" },
+  { name: "Hakkımızda", href: "/hakkimizda" },
+  { name: "Teşvik Hesaplama", href: "/tesvik-hesaplama" },
+  { name: "Referanslar", href: "/referanslar" },
+  { name: "İletişim", href: "/iletisim" },
+];
+
+const services = [
+  { name: "Patent Tescil", href: "/hizmetlerimiz/patent-tescil" },
+  { name: "Marka Tescil", href: "/hizmetlerimiz/marka-tescil" },
+  { name: "KOSGEB Destekleri", href: "/hizmetlerimiz/kosgeb-destekleri" },
+  { name: "Yatırım Teşvik", href: "/hizmetlerimiz/yatirim-tesvik-belgesi" },
+  { name: "E-İmza Satışı", href: "/hizmetlerimiz/e-imza-satisi" },
+  { name: "Web Sitesi Çözümleri", href: "/hizmetlerimiz/web-sitesi" },
+];
 
 export default function Footer() {
-  const menu = [
-    { name: "Anasayfa", href: "/" },
-    { name: "Hizmetlerimiz", href: "/hizmetlerimiz" },
-    { name: "Hakkımızda", href: "/hakkimizda" },
-    { name: "Teşvik Hesaplama", href: "/tesvik-hesaplama" },
-    { name: "Referanslar", href: "/referanslar" },
-    { name: "İletişim", href: "/iletisim" },
-  ];
-
   return (
-    <footer className="bg-white border-t border-gray-200 mt-24">
-      <div className="max-w-7xl mx-auto px-10 py-16 grid md:grid-cols-3 gap-12">
-        <div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">AKT Kurumsal & Dijital Hizmetler</h3>
-          <p className="text-gray-600 text-sm mb-6">Şirket kuruluşu, teşvik danışmanlığı, marka ve patent tescil süreçlerinde profesyonel çözüm ortağınız.</p>
-          <div className="space-y-2 text-sm">
-            <a href="mailto:info@aktkurumsal.com" className="block text-gray-600 hover:text-gray-900">info@aktkurumsal.com</a>
-            <a href="tel:+905555555555" className="block text-gray-600 hover:text-gray-900">+90 555 555 55 55</a>
+    <footer className="bg-[#0a2463] font-['Outfit',sans-serif]">
+
+      {/* Main footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        {/* Brand */}
+        <div className="sm:col-span-2 lg:col-span-1">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-9 h-9 rounded-xl bg-[#e8b923] flex items-center justify-center flex-shrink-0">
+              <span className="text-[#0a2463] font-black text-base">A</span>
+            </div>
+            <span className="text-white font-extrabold text-lg">AKT Kurumsal</span>
+          </div>
+          <p className="text-white/60 text-sm leading-relaxed mb-6">
+            Şirket kuruluşu, teşvik danışmanlığı, marka ve patent tescil süreçlerinde profesyonel çözüm ortağınız.
+          </p>
+          <div className="space-y-3">
+            <a href="mailto:info@aktkurumsal.com" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+              <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover:bg-[#e8b923]/20 transition-colors">
+                <Mail className="w-4 h-4" />
+              </div>
+              info@aktkurumsal.com
+            </a>
+            <a href="tel:+905555555555" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+              <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover:bg-[#e8b923]/20 transition-colors">
+                <Phone className="w-4 h-4" />
+              </div>
+              +90 555 555 55 55
+            </a>
+            <div className="flex items-center gap-3 text-white/60 text-sm">
+              <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-4 h-4" />
+              </div>
+              İstanbul, Türkiye
+            </div>
           </div>
         </div>
 
+        {/* Kurumsal */}
         <div>
-          <h4 className="text-md font-semibold text-gray-900 mb-4">Kurumsal</h4>
-          <ul className="space-y-3 text-sm text-gray-600">
+          <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Kurumsal</h4>
+          <ul className="space-y-2.5">
             {menu.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-gray-900">{item.name}</Link>
+                <Link href={item.href}
+                  className="flex items-center gap-2 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+                  <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all" />
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
+        {/* Hizmetler */}
         <div>
-          <h4 className="text-md font-semibold text-gray-900 mb-4">Ofis Konumu</h4>
-          <iframe
-            src="https://www.google.com/maps?q=Istanbul&output=embed"
-            width="100%"
-            height="200"
-            loading="lazy"
-            className="w-full rounded-xl border border-gray-200 shadow-sm"
-          />
+          <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Hizmetlerimiz</h4>
+          <ul className="space-y-2.5">
+            {services.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}
+                  className="flex items-center gap-2 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+                  <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all" />
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Harita */}
+        <div>
+          <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Ofis Konumu</h4>
+          <div className="rounded-2xl overflow-hidden border border-white/10">
+            <iframe
+              src="https://www.google.com/maps?q=Istanbul&output=embed"
+              width="100%"
+              height="180"
+              loading="lazy"
+              className="w-full"
+              title="Ofis Konumu"
+            />
+          </div>
+          <Link href="/iletisim"
+            className="mt-3 flex items-center justify-center gap-2 bg-[#e8b923] text-[#0a2463] font-bold px-4 py-2.5 rounded-xl text-sm hover:bg-yellow-400 transition-colors w-full">
+            Bize Ulaşın
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
 
-      <div className="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-        © 2026 AKT Kurumsal & Dijital Hizmetler. Tüm hakları saklıdır.
+      {/* Bottom bar */}
+      <div className="border-t border-white/10 py-5 px-4 sm:px-6 lg:px-10">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/40">
+          <span>© 2026 AKT Kurumsal & Dijital Hizmetler. Tüm hakları saklıdır.</span>
+          <div className="flex items-center gap-4">
+            <Link href="/iletisim" className="hover:text-[#e8b923] transition-colors">İletişim</Link>
+            <Link href="/hakkimizda" className="hover:text-[#e8b923] transition-colors">Hakkımızda</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
