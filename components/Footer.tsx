@@ -13,11 +13,12 @@ const menu = [
 ];
 
 const services = [
-  { name: "Patent Tescil", href: "/hizmetlerimiz/patent-tescil" },
-  { name: "Marka Tescil", href: "/hizmetlerimiz/marka-tescil" },
   { name: "KOSGEB Destekleri", href: "/hizmetlerimiz/kosgeb-destekleri" },
   { name: "Yatırım Teşvik", href: "/hizmetlerimiz/yatirim-tesvik-belgesi" },
+  { name: "Yabancı Çalışma İzni", href: "/hizmetlerimiz/yabanci-calisma-izni" },
+  { name: "Marka Patent Tescil", href: "/hizmetlerimiz/marka-tescil" },
   { name: "E-İmza Satışı", href: "/hizmetlerimiz/e-imza-satisi" },
+  { name: "E-Fatura ", href: "/hizmetlerimiz/e-fatura" },
   { name: "Web Sitesi Çözümleri", href: "/hizmetlerimiz/web-sitesi" },
 ];
 
@@ -46,11 +47,11 @@ export default function Footer() {
               </div>
               info@aktkurumsal.com
             </a>
-            <a href="tel:+905555555555" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+            <a href="tel:+905530777488" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
               <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover:bg-[#e8b923]/20 transition-colors">
                 <Phone className="w-4 h-4" />
               </div>
-              +90 555 555 55 55
+              +90 553 077 7488
             </a>
             <div className="flex items-center gap-3 text-white/60 text-sm">
               <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center flex-shrink-0">

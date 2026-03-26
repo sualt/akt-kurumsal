@@ -13,12 +13,12 @@ const navLinks = [
     name: "Hizmetlerimiz",
     href: "/hizmetlerimiz",
     children: [
-      { name: "Patent Tescil", href: "/hizmetlerimiz/patent-tescil" },
-      { name: "Marka Tescil", href: "/hizmetlerimiz/marka-tescil" },
       { name: "KOSGEB Destekleri", href: "/hizmetlerimiz/kosgeb-destekleri" },
       { name: "Yatırım Teşvik", href: "/hizmetlerimiz/yatirim-tesvik-belgesi" },
-      { name: "E-İmza Satışı", href: "/hizmetlerimiz/e-imza-satisi" },
       { name: "Yabancı Çalışma İzni", href: "/hizmetlerimiz/yabanci-calisma-izni" },
+      { name: "Marka Tescil", href: "/hizmetlerimiz/marka-tescil" },
+      { name: "E-İmza Satışı", href: "/hizmetlerimiz/e-imza-satisi" },
+      { name: "E-Fatura ", href: "/hizmetlerimiz/e-fatura" },
       { name: "Web Sitesi Çözümleri", href: "/hizmetlerimiz/web-sitesi" },
     ],
   },
@@ -40,7 +40,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Sayfa değişince mobil menüyü kapat
   useEffect(() => {
     setMobileOpen(false);
     setDropdownOpen(false);
@@ -54,11 +53,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex justify-between items-center h-18 md:h-20">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-[#0a2463] flex items-center justify-center">
-              <span className="text-[#e8b923] font-black text-sm">A</span>
-            </div>
-            <span className="text-base md:text-lg font-extrabold text-[#0a2463]">AKT Kurumsal</span>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <img
+              src="/images/cozumix.jpeg"
+              alt="AKT Kurumsal Logo"
+              className="h-18 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -180,12 +180,11 @@ export default function Navbar() {
             >
               {/* Drawer header */}
               <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-lg bg-[#0a2463] flex items-center justify-center">
-                    <span className="text-[#e8b923] font-black text-xs">A</span>
-                  </div>
-                  <span className="font-extrabold text-[#0a2463] text-sm">AKT Kurumsal</span>
-                </div>
+                <img
+                  src="/images/cozumix.jpeg"
+                  alt="AKT Kurumsal Logo"
+                  className="h-8 w-auto object-contain"
+                />
                 <button onClick={() => setMobileOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100">
                   <X className="w-4 h-4 text-gray-500" />
                 </button>

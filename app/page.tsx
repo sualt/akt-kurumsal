@@ -22,53 +22,54 @@ import {
 
 const services = [
   {
-    title: "Patent Tescil",
-    desc: "Limited ve anonim şirket kuruluş işlemleri, MERSİS başvuru süreci ve resmi prosedür danışmanlığı.",
-    link: "/hizmetlerimiz/patent-tescil",
-    icon: Building,
-    image: "/images/patenttescil.png",
-    tag: "Fikri Mülkiyet",
-  },
-  {
     title: "KOSGEB Destekleri",
     desc: "KOSGEB hibe ve proje başvuru danışmanlığı, uygunluk analizi ve destek süreci yönetimi.",
     link: "/hizmetlerimiz/kosgeb-destekleri",
     icon: ClipboardCheck,
-    image: "/images/kosgeb.png",
+    image: "/images/kosgeb foto.png.jpeg",
     tag: "Hibe & Destek",
-  },
-  {
-    title: "Yabancı Çalışma İzni",
-    desc: "Yabancı personel istihdamı, çalışma izni başvurusu ve bakanlık süreç yönetimi.",
-    link: "/hizmetlerimiz/yabanci-calisma-izni",
-    icon: Users,
-    image: "/images/calismaizni.png",
-    tag: "İstihdam",
-  },
-  {
-    title: "E-İmza Satışı",
-    desc: "5070 sayılı kanuna uygun elektronik imza başvurusu, teslim ve teknik kurulum hizmeti.",
-    link: "/hizmetlerimiz/e-imza-satisi",
-    icon: Key,
-    image: "/images/e-imza.png",
-    tag: "Dijital",
-  },
-  {
-    title: "Marka Tescil",
-    desc: "Türk Patent marka başvurusu, sınıf seçimi, itiraz süreci ve hukuki koruma danışmanlığı.",
-    link: "/hizmetlerimiz/marka-tescil",
-    icon: FileText,
-    image: "/images/marka-tescili.png",
-    tag: "Fikri Mülkiyet",
   },
   {
     title: "Yatırım Teşvik Belgesi",
     desc: "Bölgesel teşvikler, vergi indirimi, SGK desteği ve yatırım danışmanlığı.",
     link: "/hizmetlerimiz/yatirim-tesvik-belgesi",
     icon: Award,
-    image: "/images/yatirimtesvik.png",
+    image: "/images/tesvik belgesi foto.png.jpeg",
     tag: "Teşvik",
   },
+  {
+    title: "Yabancı Çalışma İzni",
+    desc: "Yabancı personel istihdamı, çalışma izni başvurusu ve bakanlık süreç yönetimi.",
+    link: "/hizmetlerimiz/yabanci-calisma-izni",
+    icon: Users,
+    image: "/images/calisma izni foto.png.jpeg",
+    tag: "İstihdam",
+  },
+  {
+    title: "Marka-Patent Tescil",
+    desc: "Türk Patent marka başvurusu, sınıf seçimi, itiraz süreci ve hukuki koruma danışmanlığı.",
+    link: "/hizmetlerimiz/marka-tescil",
+    icon: FileText,
+    image: "/images/marka tescil + patent.png.jpeg",
+    tag: "Fikri Mülkiyet",
+  },  
+  {
+    title: "E-İmza Satışı",
+    desc: "5070 sayılı kanuna uygun elektronik imza başvurusu, teslim ve teknik kurulum hizmeti.",
+    link: "/hizmetlerimiz/e-imza-satisi",
+    icon: Key,
+    image: "/images/e imza.png.jpeg",
+    tag: "Dijital",
+  },
+  {
+    title: "E-Fatura",
+    desc: "Gelir İdaresi Başkanlığı onaylı e-Fatura, e-Defter ve e-Arşiv başvuru, entegrasyon ve teknik destek hizmeti.",
+    link: "/hizmetlerimiz/e-fatura",
+    icon: Key,
+    image: "/images/e fatura.png.jpeg",
+    tag: "Dijital",
+  },
+  
 ];
 
 const webService = {
