@@ -55,9 +55,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <img
-              src="/images/cozumix.jpeg"
+              src="/images/cozumixlogo.png"
               alt="AKT Kurumsal Logo"
-              className="h-18 w-auto object-contain"
+              className="h-15 w-auto object-contain"
             />
           </Link>
 

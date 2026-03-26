@@ -31,11 +31,12 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="sm:col-span-2 lg:col-span-1">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-9 h-9 rounded-xl bg-[#e8b923] flex items-center justify-center flex-shrink-0">
-              <span className="text-[#0a2463] font-black text-base">A</span>
-            </div>
-            <span className="text-white font-extrabold text-lg">AKT Kurumsal</span>
+          <div className="mb-4">
+            <img
+              src="/images/cozumixlogo.png"
+              alt="AKT Kurumsal Logo"
+              className="h-14 w-auto object-contain"
+            />
           </div>
           <p className="text-white/60 text-sm leading-relaxed mb-6">
             Şirket kuruluşu, teşvik danışmanlığı, marka ve patent tescil süreçlerinde profesyonel çözüm ortağınız.
