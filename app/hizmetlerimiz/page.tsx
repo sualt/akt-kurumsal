@@ -46,11 +46,7 @@ export default function HizmetlerPage() {
 
       {/* ── PARALLAX HERO ───────────────────────────────────────────────── */}
       <section style={{ position: "relative", width: "100%", height: "70vh", overflow: "hidden" }}>
-        <motion.img
-          src="/images/hizmetlerbanner.png"
-          alt="Hizmetlerimiz"
-          style={{ y, scale, width: "100%", height: "100%", objectFit: "cover" }}
-        />
+       
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg, rgba(10,22,40,0.75) 0%, rgba(15,32,64,0.6) 50%, rgba(22,42,82,0.8) 100%)" }} />
 
         {/* Grid pattern */}

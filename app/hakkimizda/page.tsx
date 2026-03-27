@@ -16,7 +16,7 @@ const achievements = [
   { value: "500+", label: "Marka & Patent Tescili" },
   { value: "1000+", label: "KOSGEB Danışmanlığı" },
   { value: "%100", label: "Müşteri Memnuniyeti" },
-  { value: "2010", label: "Kuruluş Yılı" },
+  { value: "2026", label: "Kuruluş Yılı" },
 ];
 
 const sections = [
@@ -49,7 +49,7 @@ export default function HakkimizdaPage() {
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[60vh] overflow-hidden">
         <img
-          src="/images/hakkımızda.png"
+          
           alt="Hakkımızda"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -78,7 +78,7 @@ export default function HakkimizdaPage() {
             transition={{ delay: 0.5 }}
             className="text-white/75 text-base md:text-lg max-w-xl leading-relaxed"
           >
-            2010 yılından bu yana kurumsal danışmanlık ve tescil hizmetlerinde
+            2026 yılından bu yana kurumsal danışmanlık ve tescil hizmetlerinde
             güvenilir çözüm ortağınız olarak faaliyet gösteriyoruz.
           </motion.p>
         </div>

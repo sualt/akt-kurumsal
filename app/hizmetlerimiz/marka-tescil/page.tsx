@@ -36,7 +36,7 @@ export default function MarkaTescilPage() {
 
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
-        <Image src="/images/markatescil.png" alt="Marka Tescil" fill priority className="object-cover" />
+       
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/65 via-[#0a2463]/45 to-[#0a2463]/80" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <motion.span initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
@@ -45,7 +45,7 @@ export default function MarkaTescilPage() {
           </motion.span>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.7 }}
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-5 leading-tight drop-shadow-lg">
-            Marka Tescil Danışmanlığı
+            Marka - Patent Tescil Danışmanlığı
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
             className="text-white/75 text-base md:text-lg max-w-xl leading-relaxed">

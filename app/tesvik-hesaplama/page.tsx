@@ -84,11 +84,7 @@ export default function TesvikPage() {
 
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
-        <img
-          src="/images/tesvik.png"
-          alt="Yatırım Teşvik"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/65 via-[#0a2463]/45 to-[#0a2463]/80" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">

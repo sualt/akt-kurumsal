@@ -55,7 +55,7 @@ export default function KosgebPage() {
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
         <motion.img
-          src="/images/kosgeb.png.png"
+          
           alt="KOSGEB Destekleri"
           style={{ y, scale }}
           className="w-full h-full object-cover"

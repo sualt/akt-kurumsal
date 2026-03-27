@@ -18,9 +18,9 @@ const contactInfo = [
   {
     icon: Mail,
     title: "E-posta",
-    value: "info@aktdanismanlik.com",
+    value: "info@cozumix.co",
     sub: "24 saat içinde yanıt",
-    href: "mailto:info@aktdanismanlik.com",
+    href: "mailto:info@cozumix.co",
   },
   {
     icon: MapPin,
@@ -73,11 +73,7 @@ export default function IletisimPage() {
 
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
-        <img
-          src="/images/iletisim.png"
-          alt="İletişim"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/65 via-[#0a2463]/45 to-[#0a2463]/80" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">

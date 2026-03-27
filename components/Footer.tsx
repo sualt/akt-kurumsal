@@ -42,11 +42,11 @@ export default function Footer() {
             Şirket kuruluşu, teşvik danışmanlığı, marka ve patent tescil süreçlerinde profesyonel çözüm ortağınız.
           </p>
           <div className="space-y-3">
-            <a href="mailto:info@aktkurumsal.com" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
+            <a href="mailto:info@cozumix.co" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
               <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover:bg-[#e8b923]/20 transition-colors">
                 <Mail className="w-4 h-4" />
               </div>
-              info@aktkurumsal.com
+              info@cozumix.co
             </a>
             <a href="tel:+905530777488" className="flex items-center gap-3 text-white/60 hover:text-[#e8b923] transition-colors text-sm group">
               <div className="w-8 h-8 rounded-lg bg-white/8 flex items-center justify-center group-hover:bg-[#e8b923]/20 transition-colors">
