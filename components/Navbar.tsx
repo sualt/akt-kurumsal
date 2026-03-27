@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center flex-shrink-0">
             <img
               src="/images/cozumixlogo.png"
-              alt="ÇÖZÜMİX Kurumsal Logo"
+              alt="ÇÖZÜMX Kurumsal Logo"
               className="h-15 w-auto object-contain"
             />
           </Link>
@@ -182,7 +182,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
                 <img
                   src="/images/cozumix.jpeg"
-                  alt="ÇÖZÜMİX Kurumsal Logo"
+                  alt="ÇÖZÜMX Kurumsal Logo"
                   className="h-8 w-auto object-contain"
                 />
                 <button onClick={() => setMobileOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100">

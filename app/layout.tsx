@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "ÇÖZÜMİX Kurumsal | Patent, Marka, KOSGEB ve Teşvik Danışmanlığı",
+  title: "ÇÖZÜMX Kurumsal | Patent, Marka, KOSGEB ve Teşvik Danışmanlığı",
   description: "Patent tescil, marka tescil, KOSGEB destekleri, yatırım teşvik belgesi ve e-imza hizmetlerinde profesyonel kurumsal danışmanlık.",
   keywords: "patent tescil, marka tescil, KOSGEB, yatırım teşvik, e-imza, kurumsal danışmanlık",
   openGraph: {
-    title: "ÇÖZÜMİX Kurumsal | Kurumsal Çözüm Ortağınız",
+    title: "ÇÖZÜMX Kurumsal | Kurumsal Çözüm Ortağınız",
     description: "Patent, marka, KOSGEB ve teşvik danışmanlığında profesyonel çözüm ortağınız.",
     type: "website",
     locale: "tr_TR",

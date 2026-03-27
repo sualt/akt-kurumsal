@@ -191,7 +191,7 @@ export default function EDonusumPage() {
         {/* ── HİZMETLER + e-BELGE TÜRLERİ ───────────────────────────────── */}
         <div className="grid md:grid-cols-2 gap-5">
 
-          {/* Çözümix Hizmetleri */}
+          {/* Çözümx Hizmetleri */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -336,7 +336,7 @@ export default function EDonusumPage() {
               e-Dönüşüm Sürecinizi Profesyonelce Yönetin
             </h3>
             <p className="text-white/65 text-sm leading-relaxed">
-              Çözümix Kurumsal Danışmanlık ile e-Fatura, e-Defter ve tüm
+              Çözümx Kurumsal Danışmanlık ile e-Fatura, e-Defter ve tüm
               e-dönüşüm süreçlerinizi güvenli, hızlı ve mevzuata uygun
               şekilde tamamlayın.
             </p>

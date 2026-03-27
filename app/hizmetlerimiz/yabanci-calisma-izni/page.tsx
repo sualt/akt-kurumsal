@@ -65,9 +65,9 @@ export default function YabanciCalismaIzniPage() {
             <Users className="w-6 h-6 text-[#0a2463]" />
           </div>
           <div>
-            <h2 className="text-xl font-extrabold text-white mb-2">Çözümix Kurumsal Çalışma İzni Danışmanlığı</h2>
+            <h2 className="text-xl font-extrabold text-white mb-2">Çözümx Kurumsal Çalışma İzni Danışmanlığı</h2>
             <p className="text-white/70 text-sm leading-relaxed mb-2">
-              Çözümix Kurumsal, Türkiye'de faaliyet gösteren işletmelere yabancı çalışma izni danışmanlığı alanında profesyonel hizmet sunan kurumsal bir danışmanlık firmasıdır.
+              Çözümx Kurumsal, Türkiye'de faaliyet gösteren işletmelere yabancı çalışma izni danışmanlığı alanında profesyonel hizmet sunan kurumsal bir danışmanlık firmasıdır.
             </p>
             <p className="text-white/60 text-sm leading-relaxed">
               İşletmelerin zaman ve maliyet kaybı yaşamaması için başvuru ön analizinden sonuçlanma aşamasına kadar tüm süreci titizlikle takip ediyoruz.
@@ -104,7 +104,7 @@ export default function YabanciCalismaIzniPage() {
         {/* ── NEDEN ÇÖZÜMX ────────────────────────────────────────────────── */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
-          <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">Neden Çözümix Kurumsal?</h3>
+          <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">Neden Çözümx Kurumsal?</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {whyUs.map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-[#f7f8fc] hover:bg-[#e8b923]/8 transition-colors">
