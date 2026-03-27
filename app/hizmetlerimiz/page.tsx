@@ -79,7 +79,7 @@ export default function HizmetlerPage() {
             <Link href="/iletisim" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "13px 32px", borderRadius: 50, background: "#1a56db", color: "#fff", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
               Ücretsiz Danışmanlık Al <ArrowRight size={16} />
             </Link>
-            <a href="tel:+90XXXXXXXXXX" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "13px 28px", borderRadius: 50, background: "transparent", border: "1.5px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+            <a href="tel:+90553 077 74 88" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "13px 28px", borderRadius: 50, background: "transparent", border: "1.5px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
               <Phone size={15} /> Hemen Arayın
             </a>
           </motion.div>
@@ -217,7 +217,7 @@ export default function HizmetlerPage() {
             <Link href="/iletisim" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "15px 36px", borderRadius: 50, background: "#fff", color: "#0a1628", fontSize: 15, fontWeight: 700, textDecoration: "none" }}>
               Ücretsiz Danışmanlık Al <ArrowRight size={16} />
             </Link>
-            <a href="tel:+90XXXXXXXXXX" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "15px 28px", borderRadius: 50, background: "transparent", border: "1.5px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 15, fontWeight: 600, textDecoration: "none" }}>
+            <a href="tel:+90553 077 74 88" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "15px 28px", borderRadius: 50, background: "transparent", border: "1.5px solid rgba(255,255,255,0.3)", color: "#fff", fontSize: 15, fontWeight: 600, textDecoration: "none" }}>
               <Phone size={15} /> Hemen Arayın
             </a>
           </div>

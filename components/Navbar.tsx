@@ -126,7 +126,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:+90XXXXXXXXXX" className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-[#0a2463] transition-colors">
+            <a href="tel:+90553 077 74 88" className="flex items-center gap-1.5 text-sm font-medium text-gray-500 hover:text-[#0a2463] transition-colors">
               <Phone className="w-4 h-4" />
               <span className="hidden xl:inline">Ara</span>
             </a>
@@ -250,7 +250,7 @@ export default function Navbar() {
                   className="w-full flex items-center justify-center gap-2 bg-[#0a2463] text-white font-bold py-3.5 rounded-xl text-sm hover:bg-[#0d2d7a] transition-colors">
                   Teklif Al
                 </Link>
-                <a href="tel:+90XXXXXXXXXX"
+                <a href="tel:+90553 077 74 88"
                   className="w-full flex items-center justify-center gap-2 bg-gray-50 text-gray-700 font-medium py-3 rounded-xl text-sm border border-gray-200">
                   <Phone className="w-4 h-4" />
                   Hemen Ara

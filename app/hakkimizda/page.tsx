@@ -241,7 +241,7 @@ export default function HakkimizdaPage() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:+90XXXXXXXXXX"
+                href="tel:+90553 077 74 88"
                 className="inline-flex items-center gap-2 text-[#0a2463] font-semibold hover:text-[#e8b923] transition-colors text-sm"
               >
                 <Phone className="w-4 h-4" />

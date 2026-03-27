@@ -306,7 +306,7 @@ export default function EImzaPage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:+90XXXXXXXXXX"
+              href="tel:+90553 077 74 88"
               className="inline-flex items-center justify-center gap-2 bg-white/10 text-white font-semibold px-7 py-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all text-sm whitespace-nowrap"
             >
               <Phone className="w-4 h-4" />
