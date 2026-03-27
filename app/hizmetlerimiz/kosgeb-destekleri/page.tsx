@@ -54,12 +54,7 @@ export default function KosgebPage() {
 
       {/* ── BANNER ───────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
-        <motion.img
-          
-          alt="KOSGEB Destekleri"
-          style={{ y, scale }}
-          className="w-full h-full object-cover"
-        />
+        
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/65 via-[#0a2463]/45 to-[#0a2463]/80" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <motion.span initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}

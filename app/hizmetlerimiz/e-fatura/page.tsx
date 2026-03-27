@@ -79,13 +79,7 @@ export default function EDonusumPage() {
 
       {/* ── BANNER ─────────────────────────────────────────────────────────── */}
       <section className="relative w-full h-[55vh] overflow-hidden">
-        <Image
-          src="/images/edonusum.png"
-          alt="e-Dönüşüm Hizmetleri"
-          fill
-          priority
-          className="object-cover"
-        />
+       
         <div className="absolute inset-0 bg-gradient-to-b from-[#0a2463]/65 via-[#0a2463]/45 to-[#0a2463]/80" />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
