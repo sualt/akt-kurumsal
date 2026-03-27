@@ -11,9 +11,9 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefon",
-    value: "+90 XXX XXX XX XX",
+    value: "+90 553 077 74 88",
     sub: "Hafta içi 09:00 – 18:00",
-    href: "tel:+90XXXXXXXXXX",
+    href: "tel:+905530777488",
   },
   {
     icon: Mail,
