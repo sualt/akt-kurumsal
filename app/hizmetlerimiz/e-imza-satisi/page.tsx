@@ -173,7 +173,7 @@ export default function EImzaPage() {
               <div className="w-10 h-10 rounded-xl bg-[#0a2463]/6 flex items-center justify-center">
                 <Key className="w-5 h-5 text-[#0a2463]" />
               </div>
-              <h3 className="text-base font-bold text-[#0a2463]">AKT e-İmza Hizmetleri</h3>
+              <h3 className="text-base font-bold text-[#0a2463]">Çözümix e-İmza Hizmetleri</h3>
             </div>
             <div className="space-y-3">
               {services.map((s, i) => (
@@ -299,7 +299,7 @@ export default function EImzaPage() {
               Dijital İmza Sürecinizi Profesyonelce Yönetin
             </h3>
             <p className="text-white/65 text-sm leading-relaxed">
-              AKT Kurumsal Danışmanlık ile e-İmza ve e-Dönüşüm süreçlerinizi
+              Çözümix Kurumsal Danışmanlık ile e-İmza ve e-Dönüşüm süreçlerinizi
               güvenli, hızlı ve mevzuata uygun şekilde tamamlayın.
             </p>
           </div>

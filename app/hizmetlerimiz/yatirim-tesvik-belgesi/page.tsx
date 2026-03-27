@@ -133,7 +133,7 @@ export default function YatirimTesvikPage() {
           </div>
         </motion.div>
 
-        {/* ── DESTEKLER + HİZMETLER + NEDEN AKT ──────────────────────── */}
+        {/* ── DESTEKLER + HİZMETLER + NEDEN ÇÖZÜMİX ──────────────────────── */}
         <div className="grid md:grid-cols-3 gap-5">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
             className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
@@ -150,7 +150,7 @@ export default function YatirimTesvikPage() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
             className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
-            <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">AKT Hizmetlerimiz</h3>
+            <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">ÇÖZÜMİX Hizmetlerimiz</h3>
             <div className="space-y-3">
               {aktServices.map((s, i) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-[#f7f8fc]">
@@ -163,7 +163,7 @@ export default function YatirimTesvikPage() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.15 }}
             className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
-            <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">Neden AKT Kurumsal?</h3>
+            <h3 className="text-sm font-bold text-[#0a2463] uppercase tracking-wider mb-5">Neden Çözümix Kurumsal?</h3>
             <div className="space-y-3">
               {whyUs.map((item, i) => (
                 <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-[#f7f8fc] hover:bg-[#e8b923]/8 transition-colors">

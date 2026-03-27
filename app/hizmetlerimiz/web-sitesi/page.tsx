@@ -102,7 +102,7 @@ export default function WebTasarimPage() {
           {/* ── DİJİTAL DÖNÜŞÜM ─────────────────────────────────────────── */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
             className="bg-[#0a2463] rounded-2xl p-7 flex flex-col">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">AKT Kurumsal ile Dijital Dönüşüm</h3>
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2">Çözümix Kurumsal ile Dijital Dönüşüm</h3>
             <p className="text-white/60 text-xs leading-relaxed mb-6">İşletmenizin dijital süreçlerini tek noktadan yönetiyoruz.</p>
             <div className="space-y-3 flex-1">
               {digital.map((item) => (
@@ -127,7 +127,7 @@ export default function WebTasarimPage() {
           <div className="flex-1">
             <span className="inline-block bg-[#e8b923] text-[#0a2463] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Hemen Başlayın</span>
             <h3 className="text-xl md:text-2xl font-extrabold text-white mb-3">Web Sitenizi Profesyonelce Oluşturalım</h3>
-            <p className="text-white/65 text-sm leading-relaxed">AKT Kurumsal ile markanızı dijital dünyada güçlü ve güvenilir şekilde temsil edin.</p>
+            <p className="text-white/65 text-sm leading-relaxed">Çözümix Kurumsal ile markanızı dijital dünyada güçlü ve güvenilir şekilde temsil edin.</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
             <Link href="/iletisim" className="inline-flex items-center justify-center gap-2 bg-[#e8b923] text-[#0a2463] font-bold px-7 py-4 rounded-xl hover:bg-yellow-400 transition-all hover:scale-105 whitespace-nowrap">

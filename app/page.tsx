@@ -166,15 +166,15 @@ export default function HomePage() {
       {/* ── SEO Metadata (App Router) ─────────────────────────────────────── */}
       {/* Add this in a separate metadata.ts file for App Router:
           export const metadata = {
-            title: "AKT Danışmanlık | Kurumsal Çözüm Ortağınız",
+            title: "ÇÖZÜMİX Danışmanlık | Kurumsal Çözüm Ortağınız",
             description: "Patent tescil, marka tescil, KOSGEB destekleri, yatırım teşvik belgesi ve daha fazlası için profesyonel kurumsal danışmanlık hizmetleri.",
             keywords: "patent tescil, marka tescil, KOSGEB, yatırım teşvik, e-imza, kurumsal danışmanlık",
             openGraph: {
-              title: "AKT Danışmanlık | Kurumsal Çözüm Ortağınız",
+              title: "ÇÖZÜMİX Danışmanlık | Kurumsal Çözüm Ortağınız",
               description: "Patent, marka, KOSGEB ve teşvik danışmanlığında profesyonel çözüm ortağınız.",
               type: "website",
               locale: "tr_TR",
-              images: [{ url: "/images/banner.jpeg", width: 1200, height: 630, alt: "AKT Danışmanlık" }],
+              images: [{ url: "/images/banner.jpeg", width: 1200, height: 630, alt: "ÇÖZÜMİX Danışmanlık" }],
             },
           };
       */}

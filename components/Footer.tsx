@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="mb-4">
             <img
               src="/images/cozumixlogo.png"
-              alt="AKT Kurumsal Logo"
+              alt="ÇÖZÜMİX Kurumsal Logo"
               className="h-14 w-auto object-contain"
             />
           </div>
@@ -119,7 +119,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-5 px-4 sm:px-6 lg:px-10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/40">
-          <span>© 2026 AKT Kurumsal & Dijital Hizmetler. Tüm hakları saklıdır.</span>
+          <span>© 2026 ÇÖZÜMİX Kurumsal & Dijital Hizmetler. Tüm hakları saklıdır.</span>
           <div className="flex items-center gap-4">
             <Link href="/iletisim" className="hover:text-[#e8b923] transition-colors">İletişim</Link>
             <Link href="/hakkimizda" className="hover:text-[#e8b923] transition-colors">Hakkımızda</Link>

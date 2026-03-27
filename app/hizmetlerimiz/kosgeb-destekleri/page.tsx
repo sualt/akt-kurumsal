@@ -234,7 +234,7 @@ export default function KosgebPage() {
           </div>
         </motion.div>
 
-        {/* ── AKT HİZMET KAPSAMI ───────────────────────────────────────── */}
+        {/* ── Çözümix HİZMET KAPSAMI ───────────────────────────────────────── */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
           <div className="bg-[#0a2463] px-8 py-6 flex items-center gap-4">
@@ -242,7 +242,7 @@ export default function KosgebPage() {
               <ClipboardCheck className="w-5 h-5 text-[#0a2463]" />
             </div>
             <div>
-              <h2 className="text-lg font-extrabold text-white">AKT Hizmet Kapsamı</h2>
+              <h2 className="text-lg font-extrabold text-white">Çözümix Hizmet Kapsamı</h2>
               <p className="text-white/60 text-xs mt-0.5">Başvurudan sonuçlanmaya tam destek.</p>
             </div>
           </div>
