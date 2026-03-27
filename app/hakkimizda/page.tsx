@@ -13,10 +13,10 @@ const values = [
 ];
 
 const achievements = [
-  { value: "500+", label: "Marka & Patent Tescili" },
-  { value: "1000+", label: "KOSGEB Danışmanlığı" },
+  { value: "25+", label: "Marka & Patent Tescili" },
+  { value: "50+", label: "KOSGEB Danışmanlığı" },
   { value: "%100", label: "Müşteri Memnuniyeti" },
-  { value: "2026", label: "Kuruluş Yılı" },
+  { value: "2025", label: "Kuruluş Yılı" },
 ];
 
 const sections = [
@@ -74,7 +74,7 @@ export default function HakkimizdaPage() {
             transition={{ delay: 0.5 }}
             className="text-white/75 text-base md:text-lg max-w-xl leading-relaxed"
           >
-            2026 yılından bu yana kurumsal danışmanlık ve tescil hizmetlerinde
+            2025 yılından bu yana kurumsal danışmanlık ve tescil hizmetlerinde
             güvenilir çözüm ortağınız olarak faaliyet gösteriyoruz.
           </motion.p>
         </div>

@@ -30,8 +30,8 @@ const webService = {
 
 const stats = [
   { value: "%100", label: "Müşteri Memnuniyeti" },
-  { value: "500+", label: "Başarılı Müşteri" },
-  { value: "1200+", label: "Tamamlanan Proje" },
+  { value: "50+", label: "Başarılı Müşteri" },
+  { value: "120+", label: "Tamamlanan Proje" },
   { value: "7+", label: "Hizmet Kategorisi" },
 ];
 

@@ -96,8 +96,8 @@ const banners = [
 
 const counters = [
   { label: "Müşteri Memnuniyeti", value: 100, suffix: "%" },
-  { label: "Başarılı Müşteri", value: 500, suffix: "+" },
-  { label: "Proje Tamamlandı", value: 1200, suffix: "+" },
+  { label: "Başarılı Müşteri", value: 50, suffix: "+" },
+  { label: "Proje Tamamlandı", value: 120, suffix: "+" },
 ];
 
 // ─── COUNTER HOOK ─────────────────────────────────────────────────────────────
