@@ -186,8 +186,8 @@ export default function HakkimizdaPage() {
           </div>
           <div className="space-y-4">
             {[
-              "500+ başarılı marka ve patent tescili",
-              "1000+ KOSGEB ve devlet destek danışmanlığı",
+              "25+ başarılı marka ve patent tescili",
+              "50+ KOSGEB ve devlet destek danışmanlığı",
               "Ulusal ve uluslararası projelerde yüksek başarı oranı",
               "Sürdürülebilir kurumsal müşteri portföyü",
             ].map((item, i) => (
