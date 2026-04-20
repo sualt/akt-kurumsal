@@ -100,7 +100,7 @@ export default function Footer() {
           <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Ofis Konumu</h4>
           <div className="rounded-2xl overflow-hidden border border-white/10">
             <iframe
-              src="https://www.google.com/maps?q=Istanbul&output=embed"
+              src="https://www.google.com/maps?q=Hatay+Antakya&output=embed"
               width="100%"
               height="180"
               loading="lazy"

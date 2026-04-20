@@ -71,7 +71,6 @@ const esimza = [
 ];
 
 const calismaIzni = [
-  { name: "Cengiz Doğan", sector: "Restoran" },
   { name: "Samar Ltd. Şti.", sector: "Toptan Ticaret" },
   { name: "Dahan Vinç Ltd. Şti.", sector: "Operatörlük" },
   { name: "Özkar A.Ş.", sector: "Taşımacılık" },
